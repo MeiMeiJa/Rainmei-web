@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RecPlay.css">
+    <title>Rainmie-Music for everyone</title>
+</head>
+
+<body>
+<!-------------------------------------------------------To Navigation bar Section------------------------------------------------------------------------------------------------->
+<nav>
+    <ul>
+        <li><a class="rainmeiwebname" href="#">Rainmie</a></li>
+        <li class="hideOnMobile"><a href="Welcome.html">Home</a></li>
+        <li class="hideOnMobile"><a href="picslide.html">FindMy&#127926;</a></li>
+        <li class="hideOnMobile"><a href="letsmeknow.html">Favorite</a></li>
+        <li class="menubutton" onclick="showSidebar()"><a href="#"><i class='bx bx-menu'></i></a></li>
+    </ul>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x bx-rotate-90'></i></a></li>
+        <li><a href="Welcome.html">Home</a></li>
+        <li><a href="picslide.html">FindMy&#127926;</a></li>
+        <li><a href="letsmeknow.html">Favorite</a></li>
+    </ul>
+</nav>
+<!----------------------------------------------------video + audio + table Sectionmake song plalist use tag table--------------------------------------------------------------------------------------->
+<div class="container">
+        <div class="grid">
+            
+            <div class="gridItems">
+                <video id="video" src="video/lv_0_20240416134325.mp4" autoplay muted loop> </video>
+                <p id="songName">Deep Deep Sleep</p>
+                <p>By</p>
+                <p>WOODZ</p>
+                <audio id="audio1" src="audio/WOODZ/Deep Deep Sleep.mp3" controls></audio>
+                <audio hidden id="audio2" src="audio/WOODZ/Journey.mp3" controls></audio>
+                <audio hidden id="audio3" src="audio/WOODZ/Drowning.mp3" controls></audio>
+                <audio hidden id="audio4" src="audio/WOODZ/Busted.mp3" controls></audio>
+                <audio hidden id="audio5" src="audio/WOODZ/Who Knows.mp3" controls></audio>
+                <audio hidden id="audio6" src="audio/WOODZ/Ready to Fight.mp3" controls></audio>
+                <audio hidden id="audio7" src="audio/WOODZ/ABYSS (심연).mp3" controls></audio>
+            </div><!--end class gridItems(1)-->
+
+        </div><!--end class grid-->
+
+        <div class="table">
+            <table>
+              
+                <tr>
+                    <th colspan="3"> OO-LI </th>
+                </tr>
+              
+                <tr>
+                    <td> 1 </td>
+                    <td>
+                        Deep Deep Sleep
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong1wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+               
+                <tr>
+                    <td> 2 </td>
+                    <td>
+                        Journey
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong2wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+              
+                <tr>
+                    <td> 3 </td>
+                    <td>
+                        Drowning
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong3wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+              
+                <tr>
+                    <td> 4 </td>
+                    <td>
+                        Busted
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong4wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+              
+                <tr>
+                    <td> 5 </td>
+                    <td>
+                        Who Knows
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong5wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+              
+                <tr>
+                    <td> 6 </td>
+                    <td>
+                        Ready to Fight
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong6wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+            
+                <tr>
+                    <td> 7 </td>
+                    <td>
+                        ABYSS (심연)
+                        <p class="name">WOODZ</p>
+                    </td>
+                    <td><i onclick="showSong7wz()" class='bx bx-play-circle'></i></td>
+                </tr>
+            
+            </table>
+        </div><!--end class table-->
+</div><!--end class container-->
+
+
+    <script src="RecPlay.js"></script>
+</body>
+
+</html>

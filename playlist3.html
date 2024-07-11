@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RecPlay.css">
+    <title>Rainmie-Music for everyone</title>
+</head>
+
+<body>
+
+    <!-----------------------------------------------------------------------To Navigation bar Section------------------------------------------------------------------------------------>
+    <nav>
+        <ul>
+            <li><a class="rainmeiwebname" href="#">Rainmie</a></li>
+            <li class="hideOnMobile"><a href="Welcome.html">Home</a></li>
+            <li class="hideOnMobile"><a href="picslide.html">FindMy&#127926;</a></li>
+            <li class="hideOnMobile"><a href="letsmeknow.html">Favorite</a></li>
+            <li class="menubutton" onclick="showSidebar()"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x bx-rotate-90'></i></a></li>
+            <li><a href="Welcome.html">Home</a></li>
+            <li><a href="picslide.html">FindMy&#127926;</a></li>
+            <li><a href="letsmeknow.html">Favorite</a></li>
+        </ul>
+    </nav>
+    <!--------------------------video + audio + table Section---make song plalist use tag table--------------------------------------------------------------------------------------------->
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="gridItems">
+                <video id="video" src="video/lv_0_20240416184310.mp4" autoplay muted loop> </video>
+                <p id="songName">Moonlight</p>
+                <p>By</p>
+                <p>Ariana Grande</p>
+                <audio id="audio1" src="audio/Ariana/Moonlight.mp3" controls></audio>
+                <audio hidden id="audio2" src="audio/Ariana/Dangerous Woman.mp3" controls></audio>
+                <audio hidden id="audio3" src="audio/Ariana/Be Alright.mp3" controls></audio>
+                <audio hidden id="audio4" src="audio/Ariana/Into You.mp3" controls></audio>
+                <audio hidden id="audio5" src="audio/Ariana/Side To Side.mp3" controls></audio>
+                <audio hidden id="audio6" src="audio/Ariana/Focus.mp3" controls></audio>
+                <audio hidden id="audio7" src="audio/Ariana/Everyday.mp3" controls></audio>
+            </div><!--end class gridItems-->
+
+        </div><!--end class grid-->
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th colspan="3"> Dangerous Woman </th>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td>
+                        Moonlight
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong1a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 2 </td>
+                    <td>
+                        Dangerous Woman
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong2a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 3 </td>
+                    <td>
+                        Be Alright
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong3a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 4 </td>
+                    <td>
+                        Into You
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong4a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 5 </td>
+                    <td>
+                        Side To Side
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong5a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 6 </td>
+                    <td>
+                        Focus
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong6a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 7 </td>
+                    <td>
+                        Everyday
+                        <p class="name">Ariana Grande</p>
+                    </td>
+                    <td><i onclick="showSong7a()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+            </table>
+        </div><!--end class table-->
+    </div><!--end class container-->
+    <script src="RecPlay.js"></script>
+</body>
+
+</html>

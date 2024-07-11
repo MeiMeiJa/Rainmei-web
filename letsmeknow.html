@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Rainmie-Music for everyone</title>
+    <link rel="stylesheet" href="All.css">
+    <script src="letsmeknow.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a class="rainmeiwebname" href="#">Rianmie</a></li>
+            <li class="hideOnMobile"><a href="Welcome.html">Home</a></li>
+            <li class="hideOnMobile"><a href="picslide.html">FindMy&#127926;</a></li>
+            <li class="hideOnMobile"><a href="letsmeknow.html">Favorite</a></li>
+            <li class="menubutton" onclick="showSidebar()"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x bx-rotate-90'></i></a></li>
+            <li><a href="Welcome.html">Home</a></li>
+            <li><a href="picslide.html">FindMy&#127926;</a></li>
+            <li><a href="letsmeknow.html">Favorite</a></li>
+        </ul>
+    </nav>
+    <!---------------------------------------------------------------------------------------------------------------->
+    <div class="backgroundLet">
+        <div class="Letd">
+            <h1 class="Leth">
+                Let's me know your favorite.
+            </h1>
+        </div>
+
+        <div class="TTB">
+            <table>
+                <tr class="TTR">
+                    <th>
+                        <div id="Wavetoearth" onclick="onclickSelectArtist(id)">Wave to earth</div>
+                    </th>
+                    <th>
+                        <div id="LanaDelRey" onclick="onclickSelectArtist(id)">Lana Del Rey</div>
+                    </th>
+                    <th>
+                        <div id="BillieEilish" onclick="onclickSelectArtist(id)">Billie Eilish</div>
+                    </th>
+                </tr>
+                <tr class="TTR">
+                    <th>
+                        <div id="ArianaGrande" onclick="onclickSelectArtist()">Ariana Grande</div>
+                    </th>
+                    <th>
+                        <div id="WoodZ" onclick="onclickSelectArtist(id)">WoodZ</div>
+                    </th>
+                    <th>
+                        <div id="Arcticmonkeys" onclick="onclickSelectArtist(id)">Arctic monkeys</div>
+                    </th>
+                </tr>
+                <tr class="TTR">
+                    <th>
+                        <div id="Theweekend" onclick="onclickSelectArtist(id)">The weekend</div>
+                    </th>
+                    <th>
+                        <div id="Taeyeon" onclick="onclickSelectArtist(id)">Taeyeon</div>
+                    </th>
+                    <th>
+                        <div id="JulietIvy" onclick="onclickSelectArtist(id)">Juliet Ivy</div>
+                    </th>
+                </tr>
+                <tr class="TTR">
+                    <th>
+                        <div id="VioletteWautier" onclick="onclickSelectArtist(id)">Violette Wautier</div>
+                    </th>
+                    <th>
+                        <div id="OliviaRodrigo" onclick="onclickSelectArtist(id)">Olivia Rodrigo</div>
+                    </th>
+                    <th>
+                        <div id="TaylorSwift" onclick="onclickSelectArtist(id)">Taylor Swift</div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="donebutton">
+            <a href="picslide.html" class="done">DONE</a>
+        </div>
+    </div>
+    <script src="RecPlay.js"></script>
+</body>
+
+</html>

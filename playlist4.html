@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RecPlay.css">
+    <title>Rainmie-Music for everyone</title>
+</head>
+
+<body>
+<!---------------------------------------------------------------------------To Navigation bar Section------------------------------------------------------------------------->
+<nav>
+    <ul>
+        <li><a class="rainmeiwebname" href="#">Rainmie</a></li>
+        <li class="hideOnMobile"><a href="Welcome.html">Home</a></li>
+        <li class="hideOnMobile"><a href="picslide.html">FindMy&#127926;</a></li>
+        <li class="hideOnMobile"><a href="letsmeknow.html">Favorite</a></li>
+        <li class="menubutton" onclick="showSidebar()"><a href="#"><i class='bx bx-menu'></i></a></li>
+    </ul>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x bx-rotate-90'></i></a></li>
+        <li><a href="Welcome.html">Home</a></li>
+        <li><a href="picslide.html">FindMy&#127926;</a></li>
+        <li><a href="letsmeknow.html">Favorite</a></li>
+    </ul>
+</nav>
+<!-------------------------video + audio + table Section----make song plalist use tag table---------------------------------------------------------------------------------------------->
+<div class="container">
+
+        <div class="grid">
+
+            <div class="gridItems">
+                <video id="video" src="video/lv_0_20240416193556.mp4" autoplay muted loop> </video>
+                <p id="songName">Getting Older</p>
+                <p>By</p>
+                <p>Billie Eilish</p>
+                <audio id="audio1" src="audio/billie/Getting Older.mp3" controls></audio>
+                <audio hidden id="audio2" src="audio/billie/I Didn’t Change My Number.mp3" controls></audio>
+                <audio hidden id="audio3" src="audio/billie/Billie Bossa Nova.mp3" controls></audio>
+                <audio hidden id="audio4" src="audio/billie/Oxytocin.mp3" controls></audio>
+                <audio hidden id="audio5" src="audio/billie/GOLDWING.mp3" controls></audio>
+                <audio hidden id="audio6" src="audio/billie/Happier Than Ever.mp3" controls></audio> 
+            </div><!--end class gridItems-->
+
+        </div><!--end class grid-->
+        
+        <div class="table">
+            <table>
+                <tr>
+                    <th colspan="3"> Happier Than Ever </th>
+                </tr>
+        
+                <tr>
+                    <td> 1 </td>
+                    <td>
+                        Getting Older
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong1b()" class='bx bx-play-circle'></i></td>
+                </tr>
+           
+                <tr>
+                    <td> 2 </td>
+                    <td>
+                        I Didn’t Change My Number
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong2b()" class='bx bx-play-circle'></i></td>
+                </tr>
+            
+                <tr>
+                    <td> 3 </td>
+                    <td>
+                        Billie Bossa Nova
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong3b()" class='bx bx-play-circle'></i></td>
+                </tr>
+          
+                <tr>
+                    <td> 4 </td>
+                    <td>
+                        Oxytocin
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong4b()" class='bx bx-play-circle'></i></td>
+                </tr>
+             
+                <tr>
+                    <td> 5 </td>
+                    <td>
+                        GOLDWING
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong5b()" class='bx bx-play-circle'></i></td>
+                </tr>
+           
+                <tr>
+                    <td> 6 </td>
+                    <td>
+                        Happier Than Ever
+                        <p class="name">Billie Eilish</p>
+                    </td>
+                    <td><i onclick="showSong6b()" class='bx bx-play-circle'></i></td>
+                </tr>
+           
+            </table>
+        </div><!--end class table-->
+</div><!--end class container-->
+    <script src="RecPlay.js"></script>
+</body>
+
+</html>

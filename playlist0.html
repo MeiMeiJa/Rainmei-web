@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RecPlay.css">
+    <title>Rainmie-Music for everyone</title>
+</head>
+
+<body>
+    <!-------------------------------------------------To Navigation bar Section----------------------------------------------------------------------------------------------------->
+    <nav>
+        <ul>
+            <li><a class="rainmeiwebname" href="#">Rainmie</a></li>
+            <li class="hideOnMobile"><a href="Welcome.html">Home</a></li>
+            <li class="hideOnMobile"><a href="picslide.html">FindMy&#127926;</a></li>
+            <li class="hideOnMobile"><a href="letsmeknow.html">Favorite</a></li>
+            <li class="menubutton" onclick="showSidebar()"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x bx-rotate-90'></i></a></li>
+            <li><a href="Welcome.html">Home</a></li>
+            <li><a href="picslide.html">FindMy&#127926;</a></li>
+            <li><a href="letsmeknow.html">Favorite</a></li>
+        </ul>
+    </nav>
+    <!----------------------------------------------To video + audio Section--------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="grid">
+
+            <div class="gridItems">
+                <video id="video" src="video/lv_0_20240416183645.mp4" autoplay muted loop> </video>
+                <p id="songName">INVU</p>
+                <p>By</p>
+                <p>TAEYEON</p>
+                <audio id="audio1" src="audio/taeyeon/INVU.mp3" controls></audio>
+                <audio hidden id="audio2" src="audio/taeyeon/Some nights.mp3" controls></audio>
+                <audio hidden id="audio3" src="audio/taeyeon/Can't Control Myself.mp3" controls></audio>
+                <audio hidden id="audio4" src="audio/taeyeon/Set Myself On Fire.mp3" controls></audio>
+                <audio hidden id="audio5" src="audio/taeyeon/Toddler.mp3" controls></audio>
+                <audio hidden id="audio6" src="audio/taeyeon/Siren.mp3" controls></audio>
+                <audio hidden id="audio7" src="audio/taeyeon/Cold As Hell.mp3" controls></audio>
+                <audio hidden id="audio8" src="audio/taeyeon/Timeless.mp3" controls></audio>
+                <audio hidden id="audio9" src="audio/taeyeon/Heart.mp3" controls></audio>
+                <audio hidden id="audio10" src="audio/taeyeon/No Love Again.mp3" controls></audio>
+            </div> <!--end class gridItems-->
+
+        </div><!--end class grid-->
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th colspan="3"> INVU-The 3rd Album </th>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td>
+                        INVU
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong1()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 2 </td>
+                    <td>
+                        그런 밤 Some Night
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong2()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 3 </td>
+                    <td>
+                        Can't Control Myself
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong3()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 4 </td>
+                    <td>
+                        Set Myself On Fire
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong4()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 5 </td>
+                    <td>
+                        어른아이 Toddler
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong5()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 6 </td>
+                    <td>
+                        Siren
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong6()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 7 </td>
+                    <td>
+                        Cold As Hell
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong7()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 8 </td>
+                    <td>
+                        Timeless
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong8()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 9 </td>
+                    <td>
+                        품 Heart
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong9()" class='bx bx-play-circle'></i></td>
+                </tr>
+
+                <tr>
+                    <td> 10 </td>
+                    <td>
+                        No Love Again
+                        <p class="name">TAEYEON</p>
+                    </td>
+                    <td><i onclick="showSong10()" class='bx bx-play-circle'></i></td>
+                </tr>
+                
+            </table>
+        </div><!--end class table-->
+
+    </div><!--end class container-->
+
+
+    <script src="RecPlay.js"></script>
+</body>
+
+</html>
